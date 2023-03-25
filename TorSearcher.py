@@ -41,7 +41,8 @@ def torSearcher(url):
     with open(f"{filename}.txt","w+", encoding="utf-8") as newthing:
         newthing.write(result)
     print(filename)
-url = "http://freshonifyfe4rmuh6qwpsexfhdrww7wnt5qmkoertwxmcuvm4woo4ad.onion"
+# enter the one URL which you get from the Crawler code
+url = ""
 torSearcher(url)
 
 
