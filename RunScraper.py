@@ -13,7 +13,7 @@ else:
     safe = True
 
 if safe == True:
-    import Crawler
-    Crawler.Scraper()
+    import WebScraper
+    WebScraper.Scraper()
 else:
     print("IP change failed, try again later.")
