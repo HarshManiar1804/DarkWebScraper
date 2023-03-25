@@ -2,10 +2,6 @@
 # pysocks
 # requests
 
-# Here are all 3 files seperated by the title ( -- title --) : 
-
-#  -- AHMIA SCRAPER --
-
 def Scraper():
     import requests
     import random
@@ -16,7 +12,8 @@ def Scraper():
     if " " in yourquery:
         yourquery = yourquery.replace(" ","+")
         # Enter the Link where you want to search all the onion links 
-        url = "?q={}".format(yourquery)
+        # Remove the "enter the link" ans put your link there
+        url = "enter the link"?q={}".format(yourquery)
     #print(url)
 
     #lets set up some fake user agents
@@ -27,8 +24,6 @@ def Scraper():
     ua = random.choice(ua_list)
     headers = {'User-Agent': ua}
     #this should work
-
-
 
     request = requests.get(url, headers=headers) #, verify=False)
     content = request.text
